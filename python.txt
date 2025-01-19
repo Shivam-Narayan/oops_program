@@ -1,0 +1,104 @@
+#Python.
+    Pyhton is a high level interpreted programing language.
+    High level means any language which is in human readable form
+    Interpreted means execution of the program happen line by line.
+    programing language means a medium  of communicate or interact with system.
+
+#features of python.
+    simple and easy to learn.
+    cross platfrom language and platfrom independent language.
+    Extensible language.
+    Dynamically typed language.
+    free downloadable software.
+
+#Variables.
+    Variables are used to store data or information.
+        ex: Integer
+            Float
+            String
+
+#Datatypes.
+   Datatypes is used to indicate or specified the type of data.
+     ex: int
+         Float
+         bool(boolean)
+         str(String)            
+
+#operators.
+    operators are symbols or Symbolic representation to perform some task.
+
+
+#__str__()
+  ..It is a special function which returns the strings representation of an 
+    object.
+  ..In python, when we print the reference Variable it implicitiy calls 
+     __str__() function.
+  ..To provide implementation when we print reference Variable, we should always
+    override __str__() function.    
+
+
+
+
+#Decorator.
+ It is a function which is used to decorate add extra emplementation to 
+ another function.
+
+ In other words one function is providing additional functionality to 
+ another function is called as decorates.
+
+       syntax:@function_name.
+
+  Rules to achieve decorater function.
+   create a nested function.
+   The outer function should accept one parameter which stores the address
+   of function to the decorator.
+   The outer function should return address of the inner function.
+   Define the decorator logic inside inner function.     
+
+
+       code.
+                # A simple decorator function
+                def decorator(func):
+                
+                    def wrapper():
+                        print("Before calling the function.")
+                        func()
+                        print("After calling the function.")
+                    return wrapper
+
+                # Applying the decorator to a function
+                @decorator
+
+                def greet():
+                    print("Hello, World!")
+
+                greet()    
+
+#Iterator.
+ Iterator are functions which is used to ireverse objects or elements from a 
+ collection(Group of data)
+
+ Important methods used in iterators.
+        iter()- it is used to return iterable object address.
+        next()- it is used to return the object/element.
+
+
+
+#Generator.
+  Generator are functions which is used to generate a sequence of values.
+            syntax: def function_name():
+                        yield data.
+
+            code.
+                    # A generator function that yields 1 for first time,
+                    # 2 second time and 3 third time
+                    def fun():
+                        yield 1            
+                        yield 2            
+                        yield 3            
+                    
+                    # Driver code to check above generator function
+                    for val in fun(): 
+                        print(val)            
+                                    
+         
