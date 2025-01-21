@@ -28,6 +28,59 @@
     operators are symbols or Symbolic representation to perform some task.
 
 
+# Function:
+
+A function is a block of code which is used to perform a specific task.
+A function can defined using the def keyword.
+A function executed only when it call or invoke.
+
+     There are two types of  functions.
+          User-defined function.
+          built-in library function.
+
+          user-defined function : these are the types of function which is defined by the user to perform any specific task.
+          built-in library function : Built-in functions are pre-defined functions provided by the Python language 
+                                      that can be used to perform common tasks.
+          Some Benefits of Using Functions :
+                                            Increase Code Readability 
+                                            Increase Code Reusability
+
+
+#Format functions.
+         Format function are generally used to substitue values.
+                     synatax: ' '.format()
+                               or
+                              '{}{}'.format(value1,value2)  
+
+
+#object oriented programing
+
+class: class is a blueprint of an object.
+       class is a platfrom to store states and behaviour of an object.
+       class is declared using class keyword.
+
+                syntax:- class classname:
+                               implementation
+
+                    ex:- class car:
+                               pass
+        class is used to provide empty implementation to a block.  
+
+
+object: Anything which is present in realword and also has physical existance is called object.
+        In other words any real world entity is called as object.
+                 ex:- car,laptop,pen.
+        In every object will have certain properties.
+                 .states
+                 .behaviour
+        states are used to store some data.
+        behaviours are used to perform some task.
+
+   note: In python object name is considerd as class_name.
+         states are considerd as variables.
+         behaviour are considerd as function or methods.                                                                                                                                  
+
+
 #__str__()
   ..It is a special function which returns the strings representation of an 
     object.
@@ -40,52 +93,84 @@
 
 
 #Decorator.
- It is a function which is used to decorate add extra emplementation to 
- another function.
+ It is a function that takes another function as argument and returns a function.
 
  In other words one function is providing additional functionality to 
  another function is called as decorates.
 
        syntax:@function_name.
 
-  Rules to achieve decorater function.
-   create a nested function.
-   The outer function should accept one parameter which stores the address
-   of function to the decorator.
-   The outer function should return address of the inner function.
-   Define the decorator logic inside inner function.     
+  Rules to achieve decorator function.
+                        create a nested function.
+                        The outer function should accept one parameter which stores the address of function to the decorator.
+                        The outer function should return address of the inner function.
+                        Define the decorator logic inside inner function.   
 
+       synatax: def decorator_name(func):
+                    def wrapper(*args, **kwargs):
+                        # Add functionality before the original function call
+                        result = func(*args, **kwargs)
+                        # Add functionality after the original function call
+                        return result
+                    return wrapper
+
+
+                @decorator_name
+                def function_to_decorate():
+                    # Original function code
+                    pass
 
        code.
                 # A simple decorator function
                 def decorator(func):
                 
                     def wrapper():
-                        print("Before calling the function.")
+                        print("Transaction Initiated")
                         func()
-                        print("After calling the function.")
+                        print("Transaction completed.")
                     return wrapper
 
                 # Applying the decorator to a function
                 @decorator
 
-                def greet():
-                    print("Hello, World!")
+                def hello():
+                    print("Executing all the steps of Transaction")
 
-                greet()    
+                #hello1 = decorator(hello)
+                hello()    
+
+                 
 
 #Iterator.
- Iterator are functions which is used to ireverse objects or elements from a 
- collection(Group of data)
+ Iterator are functions which is used to traverse objects or elements from a 
+ collection or (Group of data).
 
  Important methods used in iterators.
         iter()- it is used to return iterable object address.
         next()- it is used to return the object/element.
+                 
+                code.
+                        mytuple = ("apple", "banana", "cherry")
+                        myit = iter(mytuple)
 
+                        print(next(myit))
+                        print(next(myit))
+                        print(next(myit))
+                        
+                        #second
+                        mystr = "banana"
+                        myit = iter(mystr)
 
+                        print(next(myit))
+                        print(next(myit))
+                        print(next(myit))
+                        print(next(myit))
+                        print(next(myit))
+                        print(next(myit))
 
 #Generator.
-  Generator are functions which is used to generate a sequence of values.
+  Generator are functions which is used to generate a sequence of values at one time.
+            
             syntax: def function_name():
                         yield data.
 
