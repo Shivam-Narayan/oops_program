@@ -4,7 +4,7 @@
     Interpreted means execution of the program happen line by line.
     programing language means a medium  of communicate or interact with system.
 
-#features of python.
+#Features of python.
     simple and easy to learn.
     cross platfrom language and platfrom independent language.
     Extensible language.
@@ -13,9 +13,9 @@
 
 #Variables.
     Variables are used to store data or information.
-        ex: Integer
-            Float
-            String
+        ex: Integer..
+            Float..
+            String..
 
 #Datatypes.
    Datatypes is used to indicate or specified the type of data.
@@ -30,21 +30,20 @@
 
 # Function:
 
-A function is a block of code which is used to perform a specific task.
-A function can defined using the def keyword.
-A function executed only when it call or invoke.
+            A function is a block of code which is used to perform a specific task.
+            A function can defined using the def keyword.
+            A function executed only when it call or invoke.
 
      There are two types of  functions.
           User-defined function.
           built-in library function.
 
-          user-defined function : these are the types of function which is defined by the user to perform any specific task.
-          built-in library function : Built-in functions are pre-defined functions provided by the Python language 
+          User-defined function : these are the types of function which is defined by the user to perform any specific task.
+          Built-in library function : Built-in functions are pre-defined functions provided by the Python language 
                                       that can be used to perform common tasks.
-          Some Benefits of Using Functions :
-                                            Increase Code Readability 
-                                            Increase Code Reusability
-
+                    Some Benefits of Using Functions :
+                                                        Increase Code Readability 
+                                                        Increase Code Reusability
 
 #Format functions.
          Format function are generally used to substitue values.
@@ -76,9 +75,9 @@ object: Anything which is present in realword and also has physical existance is
         states are used to store some data.
         behaviours are used to perform some task.
 
-   note: In python object name is considerd as class_name.
-         states are considerd as variables.
-         behaviour are considerd as function or methods.                                                                                                                                  
+            note: In python object name is considerd as class_name.
+                    states are considerd as variables.
+                    behaviour are considerd as function or methods.                                                                                                                                  
 
 
 #__str__()
